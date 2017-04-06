@@ -1,2 +1,2 @@
-# go-algorithms
-Go implementation of well-known algorithms
+# Go Algorithms
+Go implementation of well-known algorithms.
