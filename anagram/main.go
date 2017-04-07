@@ -11,7 +11,6 @@ func main() {
 	check("joke", "ekoj")
 }
 
-// check performs check if two provided words are anagrams and displays result.
 func check(first, second string) {
 	if isAnagram(first, second) {
 		fmt.Printf("%s is an anagram of %s\n", first, second)
@@ -20,7 +19,6 @@ func check(first, second string) {
 	}
 }
 
-// isAnagram returns true if two provided words are anagrams.
 func isAnagram(first, second string) bool {
 	length := len(first)
 	if length != len(second) {
