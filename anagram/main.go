@@ -5,21 +5,13 @@ import (
 )
 
 func main() {
-	check("not", "anagram")
-	check("test", "tset")
-	check("joke", "ekoi")
-	check("joke", "ekoj")
+	fmt.Println(check("not", "anagram"))
+	fmt.Println(check("test", "tset"))
+	fmt.Println(check("joke", "ekoi"))
+	fmt.Println(check("joke", "ekoj"))
 }
 
-func check(first, second string) {
-	if isAnagram(first, second) {
-		fmt.Printf("%s is an anagram of %s\n", first, second)
-	} else {
-		fmt.Printf("%s is not an anagram of %s\n", first, second)
-	}
-}
-
-func isAnagram(first, second string) bool {
+func check(first, second string) bool {
 	length := len(first)
 	if length != len(second) {
 		return false
