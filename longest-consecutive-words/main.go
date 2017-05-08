@@ -10,8 +10,10 @@ package main
 
 import "fmt"
 
+var test = []string{"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
+
 func main() {
-	fmt.Println(longestConsecutiveWords([]string{"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}, 2))
+	fmt.Println(longestConsecutiveWords(test, 2))
 }
 
 func longestConsecutiveWords(strarr []string, k int) (result string) {
@@ -20,9 +22,9 @@ func longestConsecutiveWords(strarr []string, k int) (result string) {
 	}
 
 	maxLength := 0
-	for i := 0; i < len(strarr) - k + 1; i++ {
+	for i := 0; i < len(strarr)-k+1; i++ {
 		var word string
-		for j:=0; j<k; j++ {
+		for j := 0; j < k; j++ {
 			word += strarr[i+j]
 		}
 
