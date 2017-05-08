@@ -18,7 +18,7 @@ func check(first, second string) bool {
 	}
 
 	for i := 0; i < length; i++ {
-		if first[i] != second[length - i - 1] {
+		if first[i] != second[length-i-1] {
 			return false
 		}
 	}

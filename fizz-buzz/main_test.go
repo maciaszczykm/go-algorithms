@@ -4,7 +4,7 @@ import "testing"
 
 func TestCheck(t *testing.T) {
 	cases := []struct {
-		i int
+		i        int
 		expected string
 	}{
 		{

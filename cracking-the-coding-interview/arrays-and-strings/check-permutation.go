@@ -21,7 +21,7 @@ func checkPermutation(a, b string) bool {
 		return false
 	}
 
-	// Sort is easy, but creating array of letters for earch word and comparing them is also a good option.
+	// Sort is easy, but creating array of letters for each word and comparing them is also a good option.
 	return sortString(a) == sortString(b)
 }
 
