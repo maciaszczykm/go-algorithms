@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 var (
 	original = map[string]string{"1": "abc", "2": "xyz", "3": ""}
