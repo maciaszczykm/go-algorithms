@@ -17,12 +17,8 @@ func main() {
 }
 
 func checkPermutation(a, b string) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
 	// Sort is easy, but creating array of letters for each word and comparing them is also a good option.
-	return sortString(a) == sortString(b)
+	return len(a) == len(b) && sortString(a) == sortString(b)
 }
 
 func sortString(w string) string {
