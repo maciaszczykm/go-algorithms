@@ -24,14 +24,14 @@ func checkPalindromePermutation(s string) bool {
 	}
 
 	maxOddChars := 0
-	if len(strings.Replace(s, " ", "", -1)) % 2 != 0 {
+	if len(strings.Replace(s, " ", "", -1))%2 != 0 {
 		maxOddChars = 1
 	}
 
 	isPalindromePermutation := true
 	oddCharsCount := 0
 	for _, y := range charMap {
-		if y % 2 != 0 {
+		if y%2 != 0 {
 			oddCharsCount++
 		}
 
